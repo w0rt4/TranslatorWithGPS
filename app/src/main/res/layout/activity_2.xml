@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kacper.translator.Activity2">
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/tu"
+        android:layout_above="@+id/bSpeak"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:src="@drawable/microphone2"
+        android:layout_alignTop="@+id/tu"
+        android:layout_alignLeft="@+id/bTranslate"
+        android:layout_alignStart="@+id/bTranslate" />
+
+    <Button
+        android:text="Tłumacz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bTranslate"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/tu"
+        android:layout_toEndOf="@+id/tu" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bSpeak"
+        android:text="Mów"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/bTranslate"
+        android:layout_alignStart="@+id/bTranslate"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTranslatedText"
+        android:text="tłumacznie"
+        android:layout_alignBottom="@+id/bSpeak"
+        android:layout_alignLeft="@+id/tu"
+        android:layout_alignStart="@+id/tu"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/tu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/spinner"
+        android:layout_toLeftOf="@+id/tvTranslatedText"
+        android:layout_toStartOf="@+id/tvTranslatedText" />
+
+    <TextView
+        android:text="Do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5" />
+
+
+</RelativeLayout>
+
